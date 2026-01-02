@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style_me_projet.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Mes Projets - Développeur Full Stack</title>
+</head>
+<body>
+   
+      <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <div class="logo__content">
+                    <span class="logo__text">Moli_Dev</span>
+                    <span class="logo__initials">MHT</span>
+                    <span class="logo__subtitle">Développeur</span>
+                </div>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html#home" class="nav__link active-link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#about" class="nav__link">À propos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#skills" class="nav__link">Compétences</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="mes_projets.html" class="nav__link">Mes Projets</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="index.html#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul> 
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__actions">
+                <i class="ri-moon-line nav__theme" id="theme-toggle"></i>
+                <i class="ri-search-line nav__search" id="search-btn"></i>
+                <i class="ri-user-line nav__login" id="login-btn"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>   
+            </div>
+        </nav>
+    </header>
+
+    <div class="search" id="search">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="Recherche" class="search__input">
+        </form>
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+    <div class="login" id="login">
+        <form action="" class="login__form">
+            <h2 class="login__title">Connexion</h2>
+            <div class="login__group">
+                <div>
+                    <label class="login__label" for="email">Email</label>
+                    <input type="email" placeholder="Votre email" id="email" class="login__input">
+                </div>
+                <div>
+                    <label class="login__label" for="password">Mot de passe</label>
+                    <input type="password" placeholder="Votre mot de passe" id="password" class="login__input">
+                </div>
+            </div>
+            <div>
+                <p class="login__signup">
+                    Vous n'avez pas de compte? <a href="#">S'inscrire</a>
+                </p>
+                <a href="#" class="login__forgot">
+                    Vous avez oublié votre mot de passe?
+                </a>
+                <button type="submit" class="login__button">Se connecter</button>
+            </div>
+        </form>
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+
+    <main class="main">
+        <section class="projects-hero">
+            <div class="container">
+                <h1 class="projects-title">Mes Projets</h1>
+                <p class="projects-subtitle">Découvrez mes réalisations en développement web et mobile</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Tous les projets</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card" data-category="web fullstack">
+                    <div class="project-image">
+                        <img src="Img/sitewebe-c.png" alt="Portfolio Personnel">
+                        <div class="project-overlay">
+                            <span class="project-tag">HTML/CSS/JS</span>
+                            <span class="project-tag">PHP/MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Boutique en Ligne (en cours)</h3>
+                        <p class="project-description">
+                            Application e-commerce complète avec panier, authentification utilisateur, 
+                            et système de paiement intégré.
+                        </p>
+                        <div class="project-tech">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>PHP et MySQL</span>
+                        </div>
+                        <a href="https://github.com/abdoulayemahamat/portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="ri-github-fill"></i> Voir sur GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card" data-category="web fullstack">
+                    <div class="project-image">
+                        <img src="Img/projetwoedpress.png" alt="Application E-commerce">
+                        <div class="project-overlay">
+                            <span class="project-tag">WordPress</span>
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Site Web Enastic</h3>
+                        <p class="project-description">
+                            Site web de Enastic creer avec WordPress responsive avec animations modernes
+                            et formulaire de contact fonctionnel.
+                        </p>
+                        <div class="project-tech">
+                            <span>WordPress</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="https://github.com/abdoulayemahamat/ecommerce" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="ri-github-fill"></i> Voir sur GitHub
+                        </a>
+                    </div>
+                </div>
+
+
+
+             
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="Img/projetqppli.png" alt="Application Météo">
+                        <div class="project-overlay">
+                            <span class="project-tag">java</span>
+                            <span class="project-tag">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Application de gestion d'inscription</h3>
+                        <p class="project-description">
+                            Application mobile de prévisions météorologiques avec géolocalisation 
+                            et notifications push.
+                        </p>
+                        <div class="project-tech">
+                            <span>java</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="https://github.com/abdoulayemahamat/weather-app" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="ri-github-fill"></i> Voir sur GitHub
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="projects-grid" data-category="web fullstack">
+                <!-- Projet 3 -->
+                <div class="project-card" data-category="web fullstack">
+                    <div class="project-image">
+                        <img src="Img/projetB.png" alt="Portfolio Personnel">
+                        <div class="project-overlay">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">spring boot/MySQL</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Application de gestion bancaire(en cours)</h3>
+                        <p class="project-description">
+                            Application de gestion bancaire avec authentification utilisateur, 
+                            et système de gestion des comptes.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Api Rest</span>
+                            <span>MySQL</span>
+                            <span>Spring Boot</span>
+                        </div>
+                        <a href="https://github.com/abdoulayemahamat/portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <i class="ri-github-fill"></i> Voir sur GitHub
+                        </a>
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
+
+            <div class="projects-cta">
+                <h2>Vous avez un projet en tête ?</h2>
+                <p>N'hésitez pas à me contacter pour discuter de votre projet de développement</p>
+                <a href="index.html#contact" class="cta-button">Me contacter</a>
+            </div>
+        </div>
+    </main>
+    
+      <footer>
+        <div class="footer__content">
+            <div class="footer__logo">
+                <div class="logo__content">
+                    <span class="logo__text">Moli_Dev</span>
+                    <span class="logo__initials">MHT</span>
+                    <span class="logo__subtitle">Développeur Full Stack</span>
+                </div>
+            </div>
+            <div class="footer__social">
+                <a href="https://www.tiktok.com/@moli_dev" target="_blank" rel="noopener noreferrer" title="TikTok"><i class="ri-tiktok-fill"></i></a>
+                <a href="https://www.facebook.com/abdoulayemahamat" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="ri-facebook-fill"></i></a>
+                <a href="https://github.com/abdoulayemahamat" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/abdoulayemahamat" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            </div>
+            <div class="footer__links">
+                <a href="index.html#home">Accueil</a>
+                <a href="index.html#about">À propos</a>
+                <a href="index.html#skills">Compétences</a>
+                <a href="mes_projets.html">Projets</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; <span id="current-year">2025</span> Abdoulaye Mahamat - Tous droits réservés</p>
+            <p>Développé avec <i class="ri-heart-fill"></i> par Moli_Dev</p>
+        </div>
+    </footer>
+
+
+    <script src="scripte.js"></script>
+    <script>
+        // Filtrage des projets
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Retirer la classe active de tous les boutons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Ajouter la classe active au bouton cliqué
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category').includes(filterValue)) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'scale(1)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Animation des cartes au chargement
+            projectCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'all 0.5s ease';
+                
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>

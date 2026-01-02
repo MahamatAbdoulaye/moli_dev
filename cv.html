@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Mahamat Abdoulaye</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background: #fff;
+        }
+        
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #4361ee;
+            padding-bottom: 20px;
+        }
+        
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #4361ee;
+        }
+        
+        .profile-info {
+            flex: 1;
+        }
+        
+        h1 {
+            color: #4361ee;
+            margin: 0;
+            font-size: 32px;
+        }
+        
+        .title {
+            color: #666;
+            font-size: 20px;
+            margin: 5px 0 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .social-links a {
+            color: #4361ee;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        h2 {
+            color: #4361ee;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 15px;
+        }
+        
+        .date {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+        
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .skill-item {
+            margin-bottom: 10px;
+        }
+        
+        .skill-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .skill-level {
+            height: 8px;
+            background: #eee;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .skill-bar {
+            height: 100%;
+            background: #4361ee;
+        }
+
+        .skill-bar-95 { width: 95%; }
+        .skill-bar-90 { width: 90%; }
+        .skill-bar-85 { width: 85%; }
+        .skill-bar-80 { width: 80%; }
+        .skill-bar-75 { width: 75%; }
+        .skill-bar-70 { width: 70%; }
+        .skill-bar-65 { width: 65%; }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        @media print {
+            body {
+                padding: 0;
+                max-width: 100%;
+            }
+            
+            .social-links a {
+                color: #4361ee !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="profile-section">
+            <img src="Img/profile.png" alt="Mahamat Abdoulaye" class="profile-photo">
+            <div class="profile-info">
+                <h1>Mahamat Abdoulaye</h1>
+                <div class="title">Développeur Full Stack</div>
+                <div class="contact-info">
+                    <div class="contact-item">📧 abdoulayemahamat332@gmail.com</div>
+                    <div class="contact-item">📱 +235 99117028</div>
+                    <div class="contact-item">📍 N'djamena, Tchad</div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.tiktok.com/@moli_dev" title="TikTok">🎵</a>
+                    <a href="https://www.facebook.com/abdoulayemahamat" title="Facebook">f</a>
+                    <a href="https://github.com/abdoulayemahamat" title="GitHub">🐙</a>
+                    <a href="https://www.linkedin.com/in/abdoulayemahamat" title="LinkedIn">in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Profil Professionnel</h2>
+        <p>Développeur Full Stack passionné avec une expertise en création d'applications web modernes. 
+        Spécialisé en développement frontend et backend, avec une solide expérience en React, Node.js, 
+        et bases de données. Passionné par l'apprentissage continu et l'innovation technologique.</p>
+    </div>
+
+    <div class="section">
+        <h2>Expérience Professionnelle</h2>
+        <div class="experience-item">
+            <div class="date">2023 - Présent</div>
+            <div><strong>Développeur Full Stack Freelance</strong></div>
+            <ul>
+                <li>Développement d'applications web sur mesure pour clients divers</li>
+                <li>Création de sites web responsives avec technologies modernes</li>
+                <li>Intégration d'APIs et optimisation des performances</li>
+            </ul>
+        </div>
+        <!-- <div class="experience-item">
+            <div class="date">2022 - 2023</div>
+            <div><strong>Formateur en Développement Web</strong> - Institut Supérieur d'Informatique</div>
+            <ul>
+                <li>Enseignement des technologies web (HTML, CSS, JavaScript)</li>
+                <li>Encadrement de projets pratiques</li>
+                <li>Création de supports de formation</li>
+            </ul>
+        </div> -->
+    </div>
+
+    <div class="section">
+        <h2>Formation</h2>
+        <div class="education-item">
+            <div class="date">2023 - Présent</div>
+            <div><strong>Licence Professionnelle en Informatique</strong></div>
+            <div>Développement Web et Mobile - ENASTIC, Amdjarass</div>
+        </div>
+        <div class="education-item">
+            <div class="date">2022 - 2023</div>
+            <div><strong>BAC Série D</strong></div>
+            <div>Lycée Bilingue Al-isra</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Compétences Techniques</h2>
+        <div class="skills-list">
+            <div class="skill-item">
+                <div class="skill-name">HTML5/CSS3</div>
+                <div class="skill-level"><div class="skill-bar skill-bar-95"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-level"><div class="skill-bar skill-bar-51"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">React.js</div>
+                <div class="skill-level"><div class="skill-bar skill-bar-50"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Node.js</div>
+                <div class="skill-level"><div class="skill-bar skill-bar-48"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">PHP/MySQL</div>
+                <div class="skill-level"><div class="skill-bar skill-bar-53"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Python</div>
+                <div class="skill-level"><div class="skill-bar skill-bar-50"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Git/GitHub</div>
+                <div class="skill-level"><div class="skill-bar skill-bar-55"></div></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-name">Figma</div>
+                <div class="skill-level"><div class="skill-bar skill-bar-30"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Langues</h2>
+        <ul>
+            <li><strong>Français:</strong> </li>
+            <li><strong>Arabe:</strong> Niveau basique</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Projets Réalisés</h2>
+        <ul>
+            <li><strong>Portfolio Personnel:</strong> Site web responsive avec animations modernes</li>
+            <li><strong>Application E-commerce:</strong> Plateforme complète avec panier et paiement</li>
+            <li><strong>Application de gestion d'inscriptions:</strong> Application de gestion d'inscriptions qui permet de gérer les inscriptions des étudiants</li>
+            <li><strong>Application de gestion bancaire:</strong> Application de gestion bancaire qui permet de gérer les opérations bancaires</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Centres d'Intérêt</h2>
+        <ul>
+            <li>Football et sports collectifs</li>
+            <li>Musique et danse traditionnelle (Tamtame)</li>
+            <li>Nouvelles technologies</li>
+            <li>Voyage et découverte culturelle</li>
+        </ul>
+    </div>
+    
+    <script>
+        // Script pour télécharger automatiquement en PDF lors de l'ouverture
+        document.addEventListener('DOMContentLoaded', function() {
+            // Vérifier si c'est une impression PDF
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.has('print')) {
+                // Attendre un peu que tout soit chargé
+                setTimeout(() => {
+                    window.print();
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about-carousel.css">
+    <title>Portfolio - Développeur Full Stack</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <div class="logo__content">
+                    <span class="logo__text">Moli_Dev</span>
+                    <span class="logo__initials">MHT</span>
+                    <span class="logo__subtitle">Développeur</span>
+                </div>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Accueil</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">À propos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Compétences</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="mes_projets.html" class="nav__link">Mes Projets</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul> 
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__actions">
+                <i class="ri-moon-line nav__theme" id="theme-toggle"></i>
+                <i class="ri-search-line nav__search" id="search-btn"></i>
+                <i class="ri-user-line nav__login" id="login-btn"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>   
+            </div>
+        </nav>
+    </header>
+
+
+     
+
+    <div class="search" id="search">
+        <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="Recherche" name="search" class="search__input">
+        </form>
+        <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+
+    <div class="login" id="login">
+        <form action="" class="login__form">
+            <h2 class="login__title">Connexion</h2>
+            <div class="login__group">
+                <div>
+                    <label class="login__label" for="email">Email</label>
+                    <input type="email" placeholder="Votre email" id="email" name="email" class="login__input">
+                </div>
+                <div>
+                    <label class="login__label" for="password">Mot de passe</label>
+                    <input type="password" placeholder="Votre mot de passe" id="password" name="password" class="login__input">
+                </div>
+            </div>
+            <div>
+                <p class="login__signup">
+                    Vous n'avez pas de compte? <a href="#">S'inscrire</a>
+                </p>
+                <a href="#" class="login__forgot">
+                    Vous avez oublié votre mot de passe?
+                </a>
+                <button type="submit" class="login__button">Se connecter</button>
+            </div>
+        </form>
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+    
+    <main class="main">
+        <!-- Section Hero CORRIGÉE -->
+        <section class="hero" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <!-- Texte de présentation à GAUCHE -->
+                    <div class="hero__text">
+                        <h1 class="hero__title">CODEUR</h1>
+                        <div class="hero__greeting">
+                            <h2 class="hero__subtitle">S a l u t</h2>
+                            <!-- Texte changeant APRÈS "Je suis" -->
+                            <div class="hero__dynamic">
+                                <span class="hero__dynamic-text">Je suis </span>
+                                <div class="text-animation-container">
+                                    <span class="changing-text"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="hero__description">
+                            Software ingénieur | Analyste développeur, former par l'Enastic et Youtubeur | Full Stack
+                        </p>
+                        <div class="hero__buttons">
+                            <!-- <a href="cv.pdf" class="hero__button hero__button-cv" download>
+                                <i class="ri-download-line"></i> Télécharger CV
+                            </a> -->
+
+
+                            <a href="#" class="hero__button hero__button-cv" id="download-cv-pdf">
+    <i class="ri-download-line"></i> Télécharger CV
+</a>
+
+                            <a href="#contact" class="hero__button hero__button-ready">
+                                <i class="ri-mail-send-line"></i> Me contacter
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- UN SEUL PROFIL à DROITE (sur desktop) -->
+                    <div class="hero__profile">
+                        <div class="profile__image-container">
+                            <div class="profile__image-wrapper">
+                                <img src="Img/profile.png" alt="Abdoulaye Mahamat" class="profile__image">
+                                <div class="profile__glow"></div>
+                                <div class="profile__dots">
+                                    <span class="dot dot-1"></span>
+                                    <span class="dot dot-2"></span>
+                                    <span class="dot dot-3"></span>
+                                    <span class="dot dot-4"></span>
+                                </div>
+                            </div>
+                            <div class="profile__info">
+                                <h3>Mahamat Abdoulaye</h3>
+                                <p>Développeur Full Stack</p>
+                                <!-- Icônes sociales dans le profil -->
+                                <div class="profile__social">
+                                    <a href="https://www.tiktok.com/@moli_dev" target="_blank" rel="noopener noreferrer" title="TikTok">
+                                        <i class="ri-tiktok-fill"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/abdoulayemahamat" target="_blank" rel="noopener noreferrer" title="Facebook">
+                                        <i class="ri-facebook-fill"></i>
+                                    </a>
+                                    <a href="https://github.com/abdoulayemahamat" target="_blank" rel="noopener noreferrer" title="GitHub">
+                                        <i class="ri-github-fill"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/abdoulayemahamat" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                        <i class="ri-linkedin-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sections restantes inchangées -->
+        <div class="div__titre">
+            <h1>Compétences</h1>
+        </div>
+
+        <section class="sec__comp" id="skills">
+            <div class="div__comp">
+                <h1>Informatique</h1>
+                <hr>
+                <div class="div__compe">
+                    <h4>Développement Web</h4>
+                    <p>HTML5, CSS3, JavaScript, PHP, SQL, React, Node.js</p>
+                    <h4>Programmation</h4>
+                    <p>Python, Java, C++</p>
+                    <h4>Logiciels & Outils</h4>
+                    <p>Microsoft Office, Git, Docker, VS Code, Figma</p>
+                </div>
+
+                <div class="div__compe">
+                    <h4>Gestion de Bases de Données</h4>
+                    <p>MySQL, PostgreSQL, MongoDB</p>
+                    <h4>Frameworks & Bibliothèques</h4>
+                    <p>Express.js, Bootstrap, React.js, Angular.js, Spring Boot et node.js</p>
+                    <h4>Concepts & Méthodologies</h4>
+                    <p>Programmation Orientée Objet, RESTful APIs, Agile/Scrum</p>
+                </div>
+
+                <h1>Langues</h1>
+                <hr>
+                <p>Français (Courant), Arabe (Basique)</p>
+            </div>
+        </section>
+
+        <div class="div__titre">
+            <h1>Diplômes & Études</h1>
+        </div>
+
+        <section class="sec-diplome">
+            <div class="diplome__item">
+                <div class="diplome__year">2019-2020</div>
+                <div class="diplome__content">
+                    <h3>BEF (Brevet d'Études Fondamentales)</h3>
+                    <p>Diplôme de fin d'études fondamentales</p>
+                </div>
+            </div>
+            <div class="diplome__item">
+                <div class="diplome__year">2022-2023</div>
+                <div class="diplome__content">
+                    <h3>BAC Série D</h3>
+                    <p>Certificat d'admission au baccalauréat</p>
+                </div>
+            </div>
+            <div class="diplome__item">
+                <div class="diplome__year">2023-Présent</div>
+                <div class="diplome__content">
+                    <h3>Licence Professionnelle en Informatique</h3>
+                    <p>Développement Web et Mobile - 2ème année</p>
+                    <p>ENASTIC, Amdjarass</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="div__titre">
+            <h1>Parcours d'Études</h1>
+        </div>
+
+        <section class="timeline">
+            <div class="timeline__item">
+                <div class="timeline__year">2024-2025</div>
+                <div class="timeline__content">
+                    <h3>ENASTIC d'Amdjarass</h3>
+                    <p>Deuxième cycle L2 - Développement Web & Mobile</p>
+                </div>
+            </div>
+            <div class="timeline__item">
+                <div class="timeline__year">2023-2024</div>
+                <div class="timeline__content">
+                    <h3>ENASTIC d'Amdjarass</h3>
+                    <p>Premier cycle L1 - Fondamentaux de l'Informatique</p>
+                </div>
+            </div>
+            <div class="timeline__item">
+                <div class="timeline__year">2022-2023</div>
+                <div class="timeline__content">
+                    <h3>Lycée Bilingue Al-isra</h3>
+                    <p>Terminale Série D - Préparation au BAC</p>
+                </div>
+            </div>
+            <div class="timeline__item">
+                <div class="timeline__year">2020-2022</div>
+                <div class="timeline__content">
+                    <h3>Lycée de la Liberté</h3>
+                    <p>Seconde et Première - Enseignement général</p>
+                </div>
+            </div>
+            <div class="timeline__item">
+                <div class="timeline__year">2017-2020</div>
+                <div class="timeline__content">
+                    <h3>CEG de Goudji Centre</h3>
+                    <p>Enseignement secondaire de base</p>
+                </div>
+            </div>
+            <div class="timeline__item">
+                <div class="timeline__year">2012-2016</div>
+                <div class="timeline__content">
+                    <h3>École Primaire Pilote de Baga-sola</h3>
+                    <p>Enseignement primaire</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+                <div class="div__titre">
+            <h1>À Propos de Moi</h1>
+        </div>
+
+        <section class="about-section" id="about">
+            <div class="about__container container">
+                <div class="about__content">
+                    <div class="about__text">
+                        <h2 class="about__title">Mon Parcours & Passion</h2>
+                        <p class="about__description">
+                            Développeur Full Stack passionné  dans la création 
+                            d'applications web modernes et innovantes. Spécialisé dans les technologies 
+                            JavaScript, React, Node.js et les bases de données relationnelles.
+                        </p>
+                        <p class="about__description">
+                            Mon objectif est de créer des solutions digitales qui améliorent la vie des 
+                            utilisateurs tout en étant esthétiques, performantes et accessibles.
+                        </p>
+                        
+                        <div class="about__highlights">
+                            <div class="about__highlight">
+                                <i class="ri-code-box-line"></i>
+                                <p>+10 projets réalisés</p>
+                            </div>
+                            <div class="about__highlight">
+                                <i class="ri-user-star-line"></i>
+                                <p>Formateur en développement web</p>
+                            </div>
+                            <div class="about__highlight">
+                                <i class="ri-lightbulb-flash-line"></i>
+                                <p>Passionné par l'innovation</p>
+                            </div>
+                            <div class="about__highlight">
+                                <i class="ri-team-line"></i>
+                                <p>Esprit d'équipe et leadership</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-container">
+                        <div class="carousel-slides">
+                            <!-- Diapositive 1 -->
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                     alt="Développement Web" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Développement Web</h3>
+                                    <p>Création d'applications modernes et responsives</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Diapositive 2 -->
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                     alt="Formation" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Formation & Mentorat</h3>
+                                    <p>Partage de connaissances avec les développeurs débutants</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Diapositive 3 -->
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                     alt="Projets" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Projets Innovants</h3>
+                                    <p>Réalisation de solutions digitales créatives</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Diapositive 4 -->
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                     alt="Collaboration" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Collaboration</h3>
+                                    <p>Travail d'équipe sur des projets ambitieux</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Boutons de navigation -->
+                        <button class="carousel-btn carousel-prev" title="Diapositive précédente">
+                            <i class="ri-arrow-left-line"></i>
+                        </button>
+                        <button class="carousel-btn carousel-next" title="Diapositive suivante">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                        
+                        <!-- Indicateurs -->
+                        <div class="carousel-indicators">
+                            <span class="carousel-indicator active"></span>
+                            <span class="carousel-indicator"></span>
+                            <span class="carousel-indicator"></span>
+                            <span class="carousel-indicator"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <div class="div__titre">
+            <h1>Loisirs</h1>
+        </div>
+
+        <section class="sec__loisir">
+            <div class="loisirs__grid">
+                <div class="loisir__item">
+                    <i class="ri-football-line"></i>
+                    <h3>Football</h3>
+                    <p>Passionné de sport et de compétition</p>
+                </div>
+                <div class="loisir__item">
+                    <i class="ri-music-2-line"></i>
+                    <h3>Musique</h3>
+                    <p>Écoute et découverte musicale</p>
+                </div>
+                <div class="loisir__item">
+                    <i class="ri-dance-line"></i>
+                    <h3>Danse Traditionnelle</h3>
+                    <p>Tamtame (Ganga) - Culture et tradition</p>
+                </div>
+                <div class="loisir__item">
+                    <i class="ri-code-line"></i>
+                    <h3>Programmation</h3>
+                    <p>Projets personnels et apprentissage continu</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="div__titre">
+            <h1>Contactez-moi</h1>
+        </div>
+
+        <section class="sec-contact" id="contact">
+            <div class="contact__container">
+                <div class="contact__info">
+                    <h2>Informations de contact</h2>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <i class="ri-mail-line"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>abdoulayemahamat332@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <i class="ri-phone-line"></i>
+                            <div>
+                                <h3>Téléphone</h3>
+                                <p>+235 99117028</p>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <i class="ri-map-pin-line"></i>
+                            <div>
+                                <h3>Localisation</h3>
+                                <p>N'djamena, Tchad</p>
+                            </div>
+                        </div>
+                        <div class="contact__detail">
+                            <i class="ri-share-line"></i>
+                            <div>
+                                <h3>Réseaux sociaux</h3>
+                                <div class="contact__social">
+                                    <a href="https://www.tiktok.com/@moli_dev" target="_blank" rel="noopener noreferrer" title="TikTok">
+                                        <i class="ri-tiktok-fill"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/abdoulayemahamat" target="_blank" rel="noopener noreferrer" title="Facebook">
+                                        <i class="ri-facebook-fill"></i>
+                                    </a>
+                                    <a href="https://github.com/abdoulayemahamat" target="_blank" rel="noopener noreferrer" title="GitHub">
+                                        <i class="ri-github-fill"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/abdoulayemahamat" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                                        <i class="ri-linkedin-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form" id="contact-form">
+                    <h2>Envoyez un message</h2>
+                    <div class="form__group">
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                    </div>
+                    <div class="form__group">
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="contact__submit">
+                        <i class="ri-send-plane-line"></i> Envoyer le message
+                    </button>
+                    <div id="form-message" class="form__message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer__content">
+            <div class="footer__logo">
+                <div class="logo__content">
+                    <span class="logo__text">Moli_Dev</span>
+                    <span class="logo__initials">MHT</span>
+                    <span class="logo__subtitle">Développeur Full Stack</span>
+                </div>
+            </div>
+            <div class="footer__social">
+                <a href="https://www.tiktok.com/@moli_dev" target="_blank" rel="noopener noreferrer" title="TikTok"><i class="ri-tiktok-fill"></i></a>
+                <a href="https://www.facebook.com/abdoulayemahamat" target="_blank" rel="noopener noreferrer" title="Facebook"><i class="ri-facebook-fill"></i></a>
+                <a href="https://github.com/abdoulayemahamat" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/abdoulayemahamat" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            </div>
+            <div class="footer__links">
+                <a href="#home">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="mes_projets.html">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; <span id="current-year">2025</span> Abdoulaye Mahamat - Tous droits réservés</p>
+            <p>Développé avec <i class="ri-heart-fill"></i> par Moli_Dev</p>
+        </div>
+    </footer>
+    <script src="scripte.js"></script>
+    <script src="about-carousel.js"></script>
+</body>
+</html>

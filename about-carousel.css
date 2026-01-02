@@ -1,0 +1,329 @@
+
+:root {
+    --header-height: 4rem;
+    --first-color: #4361ee;
+    --second-color: #3a0ca3;
+    --accent-color: #4cc9f0;
+    --title-color: #14213d;
+    --text-color: #4a5568;
+    --body-color: #f8f9fa;
+    --container-color: #ffffff;
+    --border-color: #e2e8f0;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+    --success-color: #10b981;
+    --error-color: #ef4444;
+    --body-font: "Poppins", "Syne", sans-serif;
+    --normal-font-size: 1rem;
+    --h2-font-size: 1.25rem;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --z-modal: 1000;
+    --z-fixed: 100;
+    --transition-speed: 0.3s;
+    --border-radius: 12px;
+    --container-color-rgb: 255, 255, 255;
+}
+
+body.dark-theme {
+    --first-color: #5e72e4;
+    --second-color: #825ee4;
+    --accent-color: #63b3ed;
+    --title-color: #e2e8f0;
+    --text-color: #cbd5e0;
+    --body-color: #1a202c;
+    --container-color: #2d3748;
+    --border-color: #4a5568;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --container-color-rgb: 45, 55, 72;
+}
+
+
+
+
+
+
+/* ===== ABOUT CAROUSEL SECTION ===== */
+.about-section {
+    padding: 4rem 0;
+    margin-bottom: 4rem;
+    background-color: var(--body-color);
+}
+
+.about__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about__text {
+    animation: fadeInUp 1s ease-out;
+}
+
+.about__title {
+    font-size: 2.5rem;
+    color: var(--title-color);
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.about__title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, var(--first-color), var(--accent-color));
+    border-radius: 2px;
+}
+
+.about__description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+.about__highlights {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.about__highlight {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about__highlight i {
+    color: var(--first-color);
+    font-size: 1.2rem;
+    background-color: rgba(67, 97, 238, 0.1);
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+
+.about__highlight p {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+/* Carrousel d'images */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.carousel-image:hover {
+    transform: scale(1.05);
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.carousel-slide:hover .carousel-caption {
+    transform: translateY(0);
+}
+
+.carousel-caption h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.carousel-caption p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Indicateurs du carrousel */
+.carousel-indicators {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+}
+
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicator.active {
+    background-color: var(--first-color);
+    transform: scale(1.2);
+}
+
+/* Boutons de navigation */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(var(--container-color-rgb), 0.8);
+    border: none;
+    border-radius: 50%;
+    color: var(--title-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+}
+
+.carousel-btn:hover {
+    background-color: var(--first-color);
+    color: white;
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-prev {
+    left: 1rem;
+}
+
+.carousel-next {
+    right: 1rem;
+}
+
+/* Animation pour le carrousel */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.carousel-container {
+    animation: slideIn 1s ease-out;
+}
+
+/* Responsive pour la section About */
+@media screen and (max-width: 1020px) {
+    .about__content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .about__text {
+        text-align: center;
+    }
+    
+    .about__title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .about__highlights {
+        justify-content: center;
+    }
+    
+    .carousel-container {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        padding: 3rem 0;
+    }
+    
+    .about__title {
+        font-size: 2rem;
+    }
+    
+    .about__description {
+        font-size: 1rem;
+    }
+    
+    .carousel-container {
+        height: 300px;
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-container {
+        height: 250px;
+    }
+    
+    .carousel-caption {
+        padding: 1rem;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 1.1rem;
+    }
+    
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+    
+    .carousel-indicator {
+        width: 8px;
+        height: 8px;
+    }
+}
